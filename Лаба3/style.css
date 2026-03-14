@@ -1,0 +1,152 @@
+body {
+	background-image: url('фон2.jpg');
+	background-size: cover;
+	background-position: center;
+	margin: 15px;
+}
+
+aside {
+	background-color: #F0F0F0;
+	max-width: 420px;
+	padding: 10px;
+	border: 1px solid #B2BEB5;
+}
+
+.ryadom {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 20px;
+}
+
+.aside-v-ryad {
+	flex: 1;
+	box-sizing: border-box;
+}
+
+.review {
+	flex: 1;
+	box-sizing: border-box;
+	height: 392px;
+	background-color: #FFF8DC;
+	padding: 13px;
+	border: 2px solid #CCCCCC;
+	border-radius: 8px;
+}
+
+.table1 {
+	background-image: url('КОВЁР.jpg');
+	background-size: 100% 100%;
+	border-collapse: collapse;
+}
+
+.table2 {
+	border-collapse: collapse;
+	color: #FFFFFF;
+	border: 2px solid #CCCCCC;
+}
+
+.column1 {
+	width: 650px;
+	text-align: center;
+	font-family: 'ovsyanka';
+	font-size: 18px;
+	padding: 16px;
+	color: #FFFFFF;
+}
+
+.column2 {
+	width: 350px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #779ECB;
+	font-family: 'ubuntu';
+}
+
+.head-column {
+	width: 650px;
+	text-align: center;
+	font-family: 'ovsyanka';
+	font-size: 30px;
+	padding: 16px;
+	color: #FFFFFF;
+}
+
+.image1 {
+	max-width: 600px;
+	height: auto;
+	border: 3px solid #CCCCCC;
+	border-radius: 20px;
+}
+
+.image2 {
+	max-width: 512px;
+	height: auto;
+	border: 1px solid #2F2F2F;
+	border-radius: 6px;
+}
+
+.image3 {
+	max-width: 400px;
+	height: auto;
+}
+
+.spisok {
+	text-align: center;
+	background-color: #ADD8E6;
+	padding: 8px;
+	border: 2px solid #779ECB;
+	border-radius: 12px;
+	font-family: 'ubuntu';
+	font-size: 30px;
+}
+
+.pynkt {
+	margin-top: 20px;
+	font-family: Vasek Regular;
+	font-size: 36px;
+	color: #FFFFFF;
+}
+
+.zagolovok1 {
+	font-family: 'ovsyanka';
+	color: #FAF0FA;
+	font-size: 36px;
+}
+
+.zagolovok2 {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 50px;
+	color: #FF0033;
+	font-family: 'ubuntu';
+}
+
+.text1 {
+	padding: 12px;
+	font-family: 'ubuntu';
+	font-size: 22px;
+	color: #FFFFFF;
+}
+
+.text2 {
+	font-family: 'ubuntu';
+	font-size: 20px;
+	color: #0F0F0F;
+}
+
+.game-button {
+	background-color: #003153;
+	border: 2px solid white;
+	color: white;
+	padding: 15px 32px;
+	font-size: 24px;
+	font-family: 'ubuntu';
+	border-radius: 12px;
+	margin: 30px auto;
+	display: block;
+	text-align: center;
+}
+.game-button:hover {
+	background-color: #001421;
+}
