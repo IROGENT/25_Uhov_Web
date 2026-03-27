@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаба №6</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Лаба №6</h1>
+    <nav>
+        <button class="head_button active" data-api="github">Репозитории GitHub</button>
+        <button class="head_button" data-api="posts">Тестовые посты</button>
+        <button class="head_button" data-api="kotiki">Факты о кошках</button>
+    </nav>
+</header>
+
+<main>
+    <div class="api_card">
+        <h2 id="api_title">Репозитории GitHub</h2>
+
+        <div id="content"></div>
+
+        <div id="loading" class="placeholder hidden">
+            <div class="spinner"></div>
+            <p>Загрузка...</p>
+        </div>
+
+        <div id="error" class="placeholder error hidden">
+            <p>Ошибка загрузки</p>
+            <button class="retry_btn">Повторить</button>
+        </div>
+
+        <div id="empty" class="placeholder hidden">
+            <p>Нет данных</p>
+        </div>
+    </div>
+
+    <div class="forms_card">
+        <h3>Работа с API</h3>
+        <div class="forms">
+            <div class="form">
+                <h4>Создать пост</h4>
+                <form id="post_form">
+                    <input type="text" id="post_title" placeholder="Заголовок">
+                    <textarea id="post_body" rows="3" placeholder="Текст"></textarea>
+                    <button type="submit" class="submit_green">Отправить</button>
+                </form>
+                <div id="post_result"></div>
+            </div>
+
+            <div class="form">
+                <h4>Обновить пост</h4>
+                <form id="put_form">
+                    <input type="text" id="put_id" placeholder="ID поста" pattern="[0-9]+">
+                    <input type="text" id="put_title" placeholder="Новый заголовок">
+                    <textarea id="put_body" rows="2" placeholder="Новый текст"></textarea>
+                    <button type="submit">Обновить</button>
+                </form>
+                <div id="put_result"></div>
+            </div>
+
+            <div class="form">
+                <h4>Удалить пост</h4>
+                <form id="delete_form">
+                    <input type="text" id="delete_id" placeholder="ID поста" pattern="[0-9]+">
+                    <button type="submit" class="delete_btn">Удалить</button>
+                </form>
+                <div id="delete_result"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my_posts_card">
+        <h3>Мои посты</h3>
+        <div id="my_posts" class="my_posts_container">
+            <p class="no_posts">Нет постов</p>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
